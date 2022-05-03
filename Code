@@ -69,7 +69,6 @@ if (direcshen==forward){
   }
  }
  if (direcshen==backward){
-  }
   if (stepping==half_step){
     digitalWrite(MOTOR_IN4, HIGH);
     digitalWrite(MOTOR_IN3, LOW);
@@ -110,8 +109,7 @@ if (direcshen==forward){
     digitalWrite(MOTOR_IN3, LOW);
     digitalWrite(MOTOR_IN2, LOW);
     digitalWrite(MOTOR_IN1, HIGH);
-    delay(speeed);     
-  }
+    delay(speeed);
  }
 }
 
@@ -141,7 +139,7 @@ void loop() {
   Serial.print("Analog reading pin 1: ");
   Serial.println(analogValue1);
   
-  //doesn't spin if difference between light sensors values are less than 5
+  // doesn't spin if difference between light sensors values are less than 5
   if(pow((analogValue1 - analogValue0), 2) < 25){
   Serial.println("ÄLÄ PYÖRI");
   Serial.println(pow((analogValue1 - analogValue0), 2));
