@@ -66,8 +66,10 @@ if (direcshen==forward){
     digitalWrite(MOTOR_IN3, LOW);
     digitalWrite(MOTOR_IN4, HIGH);
     delay(speeed);     
+    }
   }
  }
+ 
  if (direcshen==backward){
   if (stepping==half_step){
     digitalWrite(MOTOR_IN4, HIGH);
@@ -124,7 +126,6 @@ void setup() {
   pinMode(MOTOR_IN2, OUTPUT);
   pinMode(MOTOR_IN3, OUTPUT);
   pinMode(MOTOR_IN4, OUTPUT);
-  
 }
 
 void loop() {
@@ -133,11 +134,6 @@ void loop() {
   int analogValue1 = analogRead(A1);
   // reads the input on analog pin A0 (value between 0 and 1023)
   
-  // prints light sensor readings in console
-  Serial.print("Analog reading pin 0: ");
-  Serial.println(analogValue0);
-  Serial.print("Analog reading pin 1: ");
-  Serial.println(analogValue1);
   
   // doesn't spin if difference between light sensors values are less than 5
   if(pow((analogValue1 - analogValue0), 2) < 25){
