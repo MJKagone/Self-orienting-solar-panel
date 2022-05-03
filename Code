@@ -137,8 +137,7 @@ void loop() {
   
   // doesn't spin if difference between light sensors values are less than 5
   if(pow((analogValue1 - analogValue0), 2) < 25){
-  Serial.println("ÄLÄ PYÖRI");
-  Serial.println(pow((analogValue1 - analogValue0), 2));
+    
   }
   else if(analogValue1 < analogValue0){
     direcshen=forward;
@@ -154,9 +153,7 @@ void loop() {
     for (int i=0;i<=60;i++)
     {stepp();}
   }
-  else{
-  Serial.println("Analog 0 and 1 are same");
-  }
+
 
 
   delay(500);
