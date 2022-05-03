@@ -66,7 +66,6 @@ if (direcshen==forward){
     digitalWrite(MOTOR_IN3, LOW);
     digitalWrite(MOTOR_IN4, HIGH);
     delay(speeed);     
-    }
   }
  }
  
@@ -112,6 +111,7 @@ if (direcshen==forward){
     digitalWrite(MOTOR_IN2, LOW);
     digitalWrite(MOTOR_IN1, HIGH);
     delay(speeed);
+    }
  }
 }
 
