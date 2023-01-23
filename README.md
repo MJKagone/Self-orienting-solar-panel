@@ -4,4 +4,4 @@ The project consists of an Arduino Uno, two ambient light sensors and a stepper 
 
 See presentation.pdf for a more comprehensive overview that was presented at the end of the course.
 
-* The solar panel is not actually used to produce any electricity, as this was not an electrical engineering course.
+*The solar panel is not actually used to produce any electricity, as this was not an electrical engineering course.
