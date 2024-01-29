@@ -1,5 +1,3 @@
-// Language: C++
-
 #define MOTOR_EN_1_2  10
 #define MOTOR_EN_3_4  11
 #define MOTOR_IN1     9
